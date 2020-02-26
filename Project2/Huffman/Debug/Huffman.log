@@ -1,0 +1,29 @@
+﻿  CreateHeap.h
+  CreateHuffman.h
+  encodeFile.cpp
+d:\data structure program\project2\project2\huffman code\huffman\encodefile.cpp(24): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: 参见“strcat”的声明
+d:\data structure program\project2\project2\huffman code\huffman\encodefile.cpp(39): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+d:\data structure program\project2\project2\huffman code\huffman\encodefile.cpp(40): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: 参见“strcat”的声明
+d:\data structure program\project2\project2\huffman code\huffman\encodefile.cpp(41): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: 参见“strcat”的声明
+d:\data structure program\project2\project2\huffman code\huffman\encodefile.cpp(49): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: 参见“strcat”的声明
+d:\data structure program\project2\project2\huffman code\huffman\encodefile.cpp(118): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: 参见“strcat”的声明
+  d:\data structure program\project2\project2\huffman code\huffman\encodefile.cpp(103): note: 参见对正在编译的函数 模板 实例化“void encode<E>(HuffNode<E> *,char *,int,char [])”的引用
+          with
+          [
+              E=char
+          ]
+  decodeFile.cpp
+d:\data structure program\project2\project2\huffman code\huffman\decodefile.cpp(22): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: 参见“strcat”的声明
+d:\data structure program\project2\project2\huffman code\huffman\decodefile.cpp(116): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(90): note: 参见“strcat”的声明
+  test.cpp
+  正在生成代码...
+  LINK : 没有找到 D:\Data Structure Program\project2\project2\Huffman Code\Debug\Huffman.exe 或上一个增量链接没有生成它；正在执行完全链接
+  Huffman.vcxproj -> D:\Data Structure Program\project2\project2\Huffman Code\Debug\Huffman.exe

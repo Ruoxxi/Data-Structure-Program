@@ -1,0 +1,67 @@
+#include<string>
+#include<iostream>
+#include<fstream>
+using namespace std;
+  
+int main()
+{
+ ofstream outfile;
+ outfile.open("skyfly.txt",ios_base::app);
+ if(!outfile)
+ {
+  cout << "can't not open the file.";
+  return 0;
+ }
+ string words;
+ while(cin >> words)
+ {
+  outfile << words << endl;
+ }
+ outfile.close();
+ cin.clear();
+ ifstream infile("skyfly.txt");
+ if(!infile)
+ {
+  cout << "can't not open the file.";
+  return 0;
+ }
+ while(getline(infile,words),!infile.eof())
+ {
+  cout << words << endl;
+ }
+ infile.close();
+    return 0;
+}
+#include <fstream>
+#include <iostream>
+#include <ios>
+#include <cstdlib>
+using namespace std;
+char data[100];//Or use the Vector(in STL)
+int i=0;
+int main()
+{
+ifstream is("data.txt",ios_base::in);
+if(!is.is_open())
+{
+return EXIT_FAILURE;
+}
+else
+{
+while(is>>data[i])//if is>>data be false,it means no data or '\n'
+{
+i++;
+}
+}
+cout<<"Finish for reading!"<<endl;
+for(int j=0;j<i;j++)
+{
+cout<<data[j]<<endl;
+}
+cout<<"Data write complete!"<<endl;
+cout<<"Press any key to exit."<<endl;
+getchar();
+getchar();
+is.close();
+return EXIT_SUCCESS;
+}

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/api/Desktop/untitled/CreateGraph1.h
+iostream
+-
+assert.h
+-
+Graph1.h
+/Users/api/Desktop/untitled/Graph1.h
+
+/Users/api/Desktop/untitled/Graph1.h
+
+/Users/api/Desktop/untitled/main.cpp
+iostream
+-
+CreateGraph1.h
+/Users/api/Desktop/untitled/CreateGraph1.h
+

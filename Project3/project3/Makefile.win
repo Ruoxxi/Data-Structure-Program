@@ -1,0 +1,40 @@
+# Project: 项目1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = CLion中的代码/CoorTrans.o CLion中的代码/Dijkstra.o CLion中的代码/main.o CLion中的代码/switch.o CLion中的代码/test.o
+LINKOBJ  = CLion中的代码/CoorTrans.o CLion中的代码/Dijkstra.o CLion中的代码/main.o CLion中的代码/switch.o CLion中的代码/test.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = 项目1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+CLion中的代码/CoorTrans.o: CLion中的代码/CoorTrans.cpp
+	$(CPP) -c CLion中的代码/CoorTrans.cpp -o CLion中的代码/CoorTrans.o $(CXXFLAGS)
+
+CLion中的代码/Dijkstra.o: CLion中的代码/Dijkstra.cpp
+	$(CPP) -c CLion中的代码/Dijkstra.cpp -o CLion中的代码/Dijkstra.o $(CXXFLAGS)
+
+CLion中的代码/main.o: CLion中的代码/main.cpp
+	$(CPP) -c CLion中的代码/main.cpp -o CLion中的代码/main.o $(CXXFLAGS)
+
+CLion中的代码/switch.o: CLion中的代码/switch.cpp
+	$(CPP) -c CLion中的代码/switch.cpp -o CLion中的代码/switch.o $(CXXFLAGS)
+
+CLion中的代码/test.o: CLion中的代码/test.cpp
+	$(CPP) -c CLion中的代码/test.cpp -o CLion中的代码/test.o $(CXXFLAGS)
